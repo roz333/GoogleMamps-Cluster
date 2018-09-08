@@ -1,0 +1,5 @@
+<nav>
+  <ul>
+    <li #clickedCountry *ngFor="let country of countries"><button (click)="chosenCountry(country)">{{country.name}}</button></li>
+  </ul>
+</nav>

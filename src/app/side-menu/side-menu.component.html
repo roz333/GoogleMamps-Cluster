@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let personLocation of locationsArr | orderBy: order">
+    <div>{{personLocation.name}}</div>
+    <div>latitude: {{personLocation.location.latitude}}</div>
+    <div>longitude: {{personLocation.location.longitude}}</div>
+    <div>distance from the center of the map : {{calculteDistance(personLocation.location.latitude , personLocation.location.longitude , 0 ,
+      0).toFixed(2)}} km</div>
+  </li>
+</ul>

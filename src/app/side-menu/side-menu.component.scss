@@ -1,0 +1,15 @@
+:host {
+  font-size: 12px;
+
+}
+
+ul {
+  height: auto;
+  max-height: 440px;
+  overflow-y: scroll;
+
+  li {
+    border-bottom: 1px solid #000;
+    padding-right: 5px;
+  }
+}
